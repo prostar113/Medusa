@@ -362,7 +362,7 @@ class Notifier(object):
             }
         )
         try:
-            srv = smtplib.SMTP(host, int(port))
+            srv = smtplib.SMTP_SSL(host, int(port))
         except Exception as error:
             log.warning('Exception generated while sending e-mail: {0}', error)
             # logger.log(traceback.format_exc(), logger.DEBUG)
