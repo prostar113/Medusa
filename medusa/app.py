@@ -51,7 +51,7 @@ class MedusaApp(object):
         self.RECOMMENDED_DB = 'recommended.db'
         self.LOG_FILENAME = 'application.log'
         self.CONFIG_INI = 'config.ini'
-        self.GIT_ORG = 'pymedusa'
+        self.GIT_ORG = 'prostar113'
         self.GIT_REPO = 'Medusa'
         self.BASE_PYMEDUSA_URL = 'https://cdn.pymedusa.com'
         self.CHANGES_URL = '{base_url}/news/CHANGELOG.md'.format(base_url=self.BASE_PYMEDUSA_URL)
