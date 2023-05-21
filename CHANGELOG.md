@@ -1,3 +1,48 @@
+## 1.0.15 (21-05-2023)
+
+#### Fixes
+- Fix error with malformed TVDB data missing links
+
+-----
+
+## 1.0.14 (20-05-2023)
+
+#### Improvements
+- Update requests dependencies
+- Update YggTorrent domain (Thanks to @cpainchaud)
+- Add new logos for networks (Thanks to @purevertigo)
+- Add missing time zone for networks (Thanks to @YogSottot)
+
+#### Fixes
+- Fix endless loop caused by malformed TVDB data (Thanks to @dotsam)
+
+-----
+
+## 1.0.13 (22-03-2023)
+
+#### Improvements
+- Replace trakt with pytrakt
+
+#### Fixes
+- Fix git subprocess call for Windows paths with spaces
+
+-----
+
+## 1.0.12 (03-03-2023)
+
+#### New Features
+- Add RSS Feed Client (Thanks to @sawyersteven)
+
+#### Improvements
+- Update many Python dependencies
+
+#### Fixes
+- Ensure that git_path is a valid file (Thanks to @pizza-power)
+- Avoid exception when the filepart doesn't match a season
+- Encode NZBGet username, password and host
+
+-----
+
 ## 1.0.11 (14-01-2023)
 
 #### Improvements

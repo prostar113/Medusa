@@ -3,6 +3,7 @@
 from __future__ import unicode_literals
 
 import logging
+import os
 import platform
 import re
 import subprocess
@@ -72,11 +73,13 @@ class GitUpdateManager(UpdateManager):
 
     def _find_working_git(self):
         test_cmd = 'version'
+        main_git = 'git'
 
         if app.GIT_PATH:
-            main_git = '"' + app.GIT_PATH + '"'
-        else:
-            main_git = 'git'
+            if os.path.isfile(app.GIT_PATH):
+                main_git = '"' + app.GIT_PATH + '"'
+            else:
+                log.warning(u'Invalid git path {0} specified. Using default instead', app.GIT_PATH)
 
         log.debug(u'Checking if we can use git commands: {0} {1}', main_git, test_cmd)
         _, _, exit_status = self._run_git(main_git, test_cmd)
