@@ -1,3 +1,29 @@
+## 1.0.19 (12-12-2023)
+
+#### Improvements
+- Add many network timezones (Thanks to @YogSottot)
+- Add a few new logos (Thanks to @purevertigo)
+- Update some Python dependencies
+
+#### Fixes
+- Add try/catch block around localStorage.setItem call (Thanks to @dotsam)
+- Validate webhook URL for Slack and Discord (Thanks to @sylwia-budzynska)
+
+-----
+
+## 1.0.18 (29-10-2023)
+
+#### Improvements
+- Update some JS and Python dependencies
+- Add a few new logos (Thanks to @purevertigo)
+- Update Yggtorrent domain (Thanks to @cpainchaud)
+
+#### Fixes
+- Don't overwrite manual post-processing delete preference
+- Fix color of show-header in light theme (Thanks to @cheese1)
+
+-----
+
 ## 1.0.17 (29-06-2023)
 
 #### New Features
